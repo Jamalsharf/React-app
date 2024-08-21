@@ -1,4 +1,4 @@
-import Restaurantcard, { withPromotedLabel } from "./RestaurantCard";
+import Restaurantcard, { withPromotedLabel } from "./Restaurantcard";
 import { useState } from "react";
 import { useEffect } from "react";
 import Shimmer from "./shimmer";
