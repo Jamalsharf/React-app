@@ -18,19 +18,21 @@ const Restaurantcard = (props) => {
   return (
     <div
       data-testid="rescard"
-      className="m-4 p-4 w-[230px] rounded-lg bg-gray-100 hover:bg-gray-200 "
+      className="m-4 p-4 w-60 rounded-lg bg-gray-100  max-h-98 hover:bg-gray-200 "
     >
       <img
-        className="rounded-lg"
+        className="rounded-xl w-48 h-48 object-cover"
         alt="res-logo"
         src={CDN_URL + cloudinaryImageId}
       />
-      <h3 className="font-bold py-2 text-lg">{name}</h3>
-      <h3>{cuisines.join("-")}</h3>
-      <h3>{costForTwo}</h3>
-      <h3>{resData.info.sla.deliveryTime}minutes</h3>
-      <h3>{avgRating}Stars</h3>
-      <h3>User :{loggedInUser}</h3>
+      <div className="w-44">
+        <h3 className="font-bold py-1 text-lg line-clamp-1">{name}</h3>
+        <h3 className="py-1 line-clamp-1">{cuisines.join("-")}</h3>
+        <h3>{costForTwo}</h3>
+        <h3>{resData.info.sla.deliveryTime}minutes</h3>
+        <h3>{avgRating}Stars</h3>
+        <h3>User :{loggedInUser}</h3>
+      </div>
     </div>
   );
 };
