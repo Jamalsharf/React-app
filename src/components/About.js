@@ -7,9 +7,8 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <h1>about</h1>
+        <h1>About</h1>
         <div>
-          loggedInUser
           <UserContext.Consumer>
             {({ loggedInUser }) => (
               <h1 className="text-xl font-bold">{loggedInUser}</h1>
